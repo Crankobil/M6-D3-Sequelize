@@ -1,4 +1,4 @@
-import sequelize from "../sequelize";
+import sequelize from "../sequelize.js";
 import s from "sequelize";
 
 

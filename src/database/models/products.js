@@ -1,6 +1,6 @@
-import sequelize from "../sequelize";
+import sequelize from "../sequelize.js";
 import s from "sequelize";
-
+ 
 
 const { DataTypes } = s;
 
@@ -25,11 +25,13 @@ const Product = sequelize.define(
       defaultValue: "https://image.url",
     },
     price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
       },
 
   },
   
 );
+
+
 
 export default Product;

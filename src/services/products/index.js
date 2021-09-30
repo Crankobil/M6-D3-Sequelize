@@ -1,8 +1,10 @@
 import express from "express";
+import database from "../../database/index.js"
 import s from "sequelize";
+
 const { Op } = s;
 const productsRouter = express.Router();
-
+const {Product} = database
 
 productsRouter
   .route("/")
